@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-client
+spec:
+  selector:
+    matchLabels:
+      app: redis-client
+  template:
+    metadata:
+      labels:
+        app: redis-client
+    spec:
+      containers:
+        - name: redis-client
+          image: rediscommander/redis-commander
+          env:
+            - name: REDIS_HOST
+              value: redis.default.svc.cluster.local
+            - name: REDIS_PORT
+              value: "6379"
+          ports:
+            - name: redis-commander
+              containerPort: 8081
+          resources:
+            limits:
+              memory: "100Mi"
+              cpu: "50m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-client
+spec:
+  selector:
+    app: redis-client
+  ports:
+    - port: 8081
+      nodePort: 30090
+  type: NodePort
