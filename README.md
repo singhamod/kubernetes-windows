@@ -27,6 +27,7 @@ This document talks about how to get up and running with a single node Kubernete
 ![Grafana](https://github.com/gamodg/k8s-local/blob/master/grafana.PNG?raw=true)
 * As per above figure Grafana is running on port **32426**
 * Go to [http://localhost:32426](http://localhost:32426) and Grafana should open up
+* Loging using admin/admin
 
 
 ## License
