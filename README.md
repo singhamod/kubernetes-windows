@@ -20,7 +20,7 @@ This document talks about how to get up and running with a single node Kubernete
 * Run kubectl get all
 ![Kibana](https://github.com/gamodg/k8s-local/blob/master/images/redis.PNG?raw=true)
 * As per above figure Kibana is running on port **30090**
-* Go to [http://localhost:30090](http://localhost:30090) and Kibana should open up
+* Go to [http://localhost:30090](http://localhost:30090) and Redis Commander should be up
 
 ## Enable logging and monitoring
 ### Logging
