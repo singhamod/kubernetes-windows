@@ -2,6 +2,9 @@
 
 This document talks about how to get up and running with a single node Kubernetes cluster with logging (ELK) and monitoring(grafana, prometheus).
 
+##High level architecture
+![K8s Architecture](https://github.com/gamodg/k8s-local/blob/master/k8s-architecture.PNG?raw=true)
+
 ## Install Docker and enable Kubernetes
 * Download [docker desktop](https://hub.docker.com/?overlay=onboarding) from docker hub
 * Install on windows
