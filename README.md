@@ -14,6 +14,14 @@ This document talks about how to get up and running with a single node Kubernete
 ![Settings](https://github.com/gamodg/k8s-local/blob/master/images/docker-settings-k8s.png?raw=true)
 * Apply
 
+## Deploy Redis
+* To deploy redis run redis.bat
+* The above batch file will deploy redis cache and redis-commander redis gui client
+* Run kubectl get all
+![Kibana](https://github.com/gamodg/k8s-local/blob/master/images/kibana.PNG?raw=true)
+* As per above figure Kibana is running on port **30445**
+* Go to [http://localhost:30445](http://localhost:30445) and Kibana should open up
+
 ## Enable logging and monitoring
 ### Logging
 * To enable ELK logging stack run logging.bat
