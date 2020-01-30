@@ -39,6 +39,9 @@ This document talks about how to get up and running with a single node Kubernete
 * As per above figure Grafana is running on port **32426**
 * Go to [http://localhost:32426](http://localhost:32426) and Grafana should open up
 * Loging using admin/admin
+* Configure the datasource as shown below
+![Datasource](https://github.com/singhamod/kubernetes-windows/blob/master/images/grafana-ds.PNG?raw=true)
+
 
 
 ## License
